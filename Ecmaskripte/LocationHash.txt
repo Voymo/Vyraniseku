@@ -1,0 +1,24 @@
+/*window.onload = function test()
+{
+	var iframe = document.getElementById('frame');
+	if (location.hash == '#HW_Herrscher')
+	{
+		iframe.src = "Doks/Dokument1.htm";
+	}
+	else
+	{
+		iframe.src = "Doks/Basis.xht";
+	}
+}*/
+
+
+
+Testzeugs
+
+[].forEach.call (document.getElementsByTagName('a'), function(a)
+{
+	a.onclick = function ()
+	{
+		this.style.color = "#ff0000";
+	}
+});
