@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html [
+    <!ENTITY slo "&#x017F;">
+]>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Language" content="de"/>
+    <meta charset="UTF-8"/>
+    <title>Vyraniseku</title>
+    <link rel="icon" href="Symbol.ico" type="image/x-icon" sizes="32x32"/>
+    <meta name="description" content="Offizielle Seite Voymos voll entfalteter Fantasie und Gedanken. Zurücklehnen, lesen, eintauchen und erleben."/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="Stilbogen/FONTS.css" type="text/css"/>
+    <style type="text/css">
+        @import 'Default.css';
+        body {
+            background: #808080 center/cover fixed;
+            background-image: url(Hgbilder/GothMarjell.jpg);
+            font: 12pt Sans-serif
+        }
+        q{ quotes: "\201E" "\201C" '\201A' '\2018' }
+    </style>
+    <script type="text/ecmascript" src="Ecmaskripte/Haupt.js"></script>
+</head>
+<body>
+    <header>
+        <div class="left">
+            <span style="height:100%"> <img src="Graphiken/OrnamentL.png" style="height:inherit" alt="Ornament"/> </span>
+            <a target="frame" href="Doks/Basis.xht" onclick="rh()"><img src="Graphiken/ProtoHome.png" alt="Home" width="60" height="60" title="Home"/></a>
+            <!-- (!) Was steht an? -->
+        </div>
+        <div class="center">
+            <h1>‡ Varaniseku ‡</h1>
+            <h2>Die Seite zu HW &amp; KRD</h2>
+        </div>
+        <div class="right">
+            <table>
+                <tr>
+                    <td>
+                        <a href="https://voymo.deviantart.com" target="_blank"><img src="Graphiken/dva_logo_s.png" alt="DeviantArt" width="45" height="45"/></a>
+                        <a href="Doks/Extras_Chat.xhtml"><img src="Graphiken/Sozial_xat_s.png" alt="xat" width="45" height="45" title="xat - chat!"/></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <select class="far"> <!-- Später JSP hier -->
+                            <option hidden='' disabled='' selected=''>Farbe</option>
+                            <option value="stdRot"><label for="stdRot">Rot (st.)</label></option>
+                            <option value="blau"><label for="blau">Blau</label></option>
+                            <option value="lila"><label for="lila">Violett</label></option>
+                            <option value="graphit"><label for="graphit">Graphit</label></option>
+                            <option value="gruen"><label for="gruen">Grün</label></option>
+                            <option value="gold"><label for="gold">Golden</label></option>
+                        </select>
+                        <select class="hg">
+                            <option hidden='' disabled='' selected=''>Hintergrund</option>
+                            <option value="stdHg"><label for="stdHg">„Marjell" (st.)</label></option>
+                            <option value="nacht"><label for="nacht">Nachthimmel</label></option>
+                            <option value="fort1"><label for="fort1">Burg (gez.)</label></option>
+                            <option value="fort2"><label for="fort2">Burg (Winter)</label></option>
+                            <option value="schiff"><label for="schiff">Schiff-Silh.</label></option>
+                            <option value="raum"><label for="raum">Planetarisch</label></option>
+                            <option value="zrchn"><label for="zrchn">Zerochan</label></option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+            <span style="height:100%"> <img src="Graphiken/OrnamentR.png" style="height:inherit" alt="Ornament"/> </span>
+        </div>
+    </header>
+    <aside>
+        <div class="thema">
+            <a href="#HW"><h3>~HW~</h3></a> <a href="#KgrDeu"><h3>~KRD~</h3></a>
+        </div>
+        <div class="HW">
+            <nav>
+                <a target="frame" href="Doks/Dokument.htm" onclick="rh();location.hash='HW_Quatroversum';">HW: Quatroversum</a>
+                <a target="frame" href="Doks/Dokument.htm" onclick="rh();location.hash='HW_Varani';">HW: Die Varani</a>
+                <a target="frame" href="Doks/Dokument1.htm" onclick="rh();location.hash='HW_Herrscher';">HW: Herrscherfamile</a>
+                <a target="frame" href="Doks/Dokument.htm" onclick="rh();location.hash='HW_Architektur';">HW: Architektur</a>
+            </nav>
+        </div>
+        <div class="KRD">
+            <nav>
+                <a target="frame" href="Doks/Dokument.htm" onclick="rh();location.hash='KRD_Schaffung';">KRD: Entstehung</a>
+                <a target="frame" href="Doks/Dokument.htm" onclick="rh();location.hash='KRD_Neuordnung';">KRD: Neuordnung</a>
+                <a target="frame" href="Doks/Dokument.htm" onclick="rh();location.hash='KRD_Goldzeit';">KRD: Goldene Zeit</a>
+                <a target="frame" href="Doks/Dokument.htm" onclick="rh();location.hash='KRD_Krieg';">KRD: Der Krieg</a>
+                <a target="frame" href="Doks/Dokument.htm" onclick="rh();location.hash='KRD_Herrscher';">KRD: Herrscherfamilie</a>
+            </nav>
+        </div>
+    </aside>
+    <main>
+        <iframe id="frame" name="frame" style="border:0" src="">
+        </iframe>
+    </main>
+</body>
+</html>
