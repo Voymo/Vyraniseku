@@ -1,0 +1,24 @@
+﻿@charset 'UTF-8';
+/*Grid Layout*/
+body
+{margin:0; height:100vh}
+
+body
+{display:table}
+
+header
+{display:table-row;
+width:100%; height:fit-content}
+
+aside
+{display:table-cell;
+width:1%}
+
+main
+{display:table-cell;
+width:99%}
+
+
+header {background:red}
+aside {background:green}
+main {background:blue}
