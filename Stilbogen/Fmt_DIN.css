@@ -1,0 +1,14 @@
+﻿body {margin:0}
+@media screen and (max-width: 768px) {
+body>div {padding:8px; background-color:rgb(255,255,240)}
+;}
+@media screen and (min-width: 768px) {
+body>div {width:148mm; margin:0 auto; padding:4px 8px 6px 8px; transition: width 0.5s;
+background-color:rgba(255,255,240,.92); box-shadow:#000 5px 0 5px -5px,#000 -5px 0 5px -5px, #000 0 0 3px inset}
+;}
+@media screen and (min-width: 1200px) {
+body>div {width:210mm; transition: width 0.5s}
+;}
+@media screen and (min-width: 1856px) {
+body>div {width:297mm}
+;}
