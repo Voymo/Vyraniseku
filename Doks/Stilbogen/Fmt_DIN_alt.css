@@ -1,0 +1,14 @@
+@media screen and (max-width: 768px) {
+body {margin:8px; background-color:rgba(255,255,240,.92)}
+main {padding:0; background-color:transparent}
+}
+@media screen and (min-width: 768px) {
+body {width:148mm; margin:0 auto; background-color:transparent; transition: width 0.5s}
+main {padding:4px 8px 6px 8px; background-color:rgba(255,255,240,.92); box-shadow:#000 5px 0 5px -5px,#000 -5px 0 5px -5px, #000 0 0 3px inset}
+}
+@media screen and (min-width: 1200px) {
+body {width:210mm; transition: width 0.5s}
+}
+@media screen and (min-width: 1856px) {
+body {width:297mm}
+}
