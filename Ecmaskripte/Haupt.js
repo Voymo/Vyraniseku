@@ -26,14 +26,14 @@ function hashLocator(frame) {
 		switch(location.hash) {
 			case "#HW_Herrscher": frame.src="Doks/Dokument1.htm";
 				break;
-			case "#TESTHA": frame.src="Doks/KALK.htm";
+			case "#KRD_Schaffung": frame.src="Doks/KRD_Entstehung.xht";
 				break;
 			default: frame.src="Doks/Basis.xht";
 		}
 	}else switch(location.hash) {
 		case "#HW_Herrscher": ajaxLoad('Doks/Dokument1.xml', callback);
 			break;
-		case "#TESTHA": ajaxLoad('Doks/KALK.htm', callback);
+		case "#KRD_Schaffung": ajaxLoad('Doks/KRD_Entstehung.xht', callback);
 			break;
 		default: ajaxLoad('Doks/Basis.xht', callback);
 	}
@@ -79,27 +79,27 @@ case 'interactive':
 				bg.backgroundImage="url(Hgbilder/Planet-Raum.jpg)";
 		}
 	};
-	titlebar = document.styleSheets[1].cssRules[0].styleSheet.cssRules[14].style;
-	sidebar = document.styleSheets[1].cssRules[0].styleSheet.cssRules[16].style;
+	titlebar = document.styleSheets[1].cssRules[2].style;
+	sidebar = document.styleSheets[1].cssRules[3].style;
 	document.querySelector('select.far').onchange = function(bgcolour) {
 		switch(bgcolour.target.value) {
 			case "stdRot":
 				titlebar.background="linear-gradient(to bottom, rgba(22,0,3,.8),rgba(100,80,82,.8))";
 				titlebar.borderColor="#503333";
 				sidebar.backgroundColor="rgba(157,3,17,.7)";
-			//	sidebar.borderColor="#303050";
+				sidebar.borderColor="#550000";
 				break;
 			case "blau":
 				titlebar.background="linear-gradient(to bottom, rgba(0,3,26,.8),rgba(80,82,104,.8))";
 				titlebar.borderColor="#503333";
 				sidebar.backgroundColor="rgba(12,28,153,.7)";
-			//	sidebar.borderColor="#303050";
+				sidebar.borderColor="#303050";
 				break;
 			case "lila":
 				titlebar.background="linear-gradient(to bottom, rgba(20,0,22,.8),rgba(98,80,100,.8))";
 				titlebar.borderColor="#3E3042";
-				sidebar.backgroundColor="rgba(12,28,153,.7)";
-			//	sidebar.borderColor="#3E3042";
+				sidebar.backgroundColor="rgba(128,0,128,.7)";
+				sidebar.borderColor="#3E3042";
 				break;
 		}	
 	};
